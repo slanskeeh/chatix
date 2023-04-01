@@ -1,0 +1,158 @@
+[debug] [2023-04-01T11:13:14.073Z] ----------------------------------------------------------------------
+[debug] [2023-04-01T11:13:14.076Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\maxis\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-01T11:13:14.076Z] CLI Version:   11.25.2
+[debug] [2023-04-01T11:13:14.077Z] Platform:      win32
+[debug] [2023-04-01T11:13:14.077Z] Node Version:  v18.12.1
+[debug] [2023-04-01T11:13:14.078Z] Time:          Sat Apr 01 2023 14:13:14 GMT+0300 (Москва, стандартное время)
+[debug] [2023-04-01T11:13:14.078Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-01T11:13:14.089Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-01T11:13:14.089Z] > authorizing via signed-in user (maximslansky@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Web\Projects\Self\chatixxx\youtube2022
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-04-01T11:14:03.016Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-04-01T11:14:03.733Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-04-01T11:14:03.733Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project online-chat-e2ef5 (online-chat) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-04-01T11:14:05.676Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-04-01T11:14:05.677Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/online-chat-e2ef5
+[debug] [2023-04-01T11:14:06.873Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firebasedatabase.googleapis.com 200
+[debug] [2023-04-01T11:14:06.873Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-04-01T11:14:06.874Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-04-01T11:14:06.875Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/online-chat-e2ef5
+[debug] [2023-04-01T11:14:08.544Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-04-01T11:14:08.544Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-04-01T11:14:18.562Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-04-01T11:14:18.562Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/online-chat-e2ef5
+[debug] [2023-04-01T11:14:19.697Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firebasedatabase.googleapis.com 200
+[debug] [2023-04-01T11:14:19.698Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-04-01T11:14:19.704Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/online-chat-e2ef5 [none]
+[debug] [2023-04-01T11:14:20.086Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/online-chat-e2ef5 200
+[debug] [2023-04-01T11:14:20.086Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/online-chat-e2ef5 {"projectId":"online-chat-e2ef5","projectNumber":"873113695162","displayName":"online-chat","name":"projects/online-chat-e2ef5","resources":{"hostingSite":"online-chat-e2ef5","storageBucket":"online-chat-e2ef5.appspot.com","locationId":"europe-central2"},"state":"ACTIVE","etag":"1_4188978d-8021-4a2b-9e29-b982c239988a"}
+[debug] [2023-04-01T11:14:27.359Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/online-chat-e2ef5/locations/europe-west1/instances databaseId=online-chat-e2ef5-default-rtdb&validateOnly=true
+[debug] [2023-04-01T11:14:27.360Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/online-chat-e2ef5/locations/europe-west1/instances {"type":"default_database"}
+[debug] [2023-04-01T11:14:28.193Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/online-chat-e2ef5/locations/europe-west1/instances 200
+[debug] [2023-04-01T11:14:28.194Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/online-chat-e2ef5/locations/europe-west1/instances {"name":"projects/873113695162/locations/europe-west1/instances/online-chat-e2ef5-default-rtdb","project":"projects/873113695162","databaseUrl":"https://online-chat-e2ef5-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2023-04-01T11:14:28.196Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/online-chat-e2ef5/locations/europe-west1/instances databaseId=online-chat-e2ef5-default-rtdb
+[debug] [2023-04-01T11:14:28.196Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/online-chat-e2ef5/locations/europe-west1/instances {"type":"default_database"}
+[debug] [2023-04-01T11:14:28.940Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/online-chat-e2ef5/locations/europe-west1/instances 200
+[debug] [2023-04-01T11:14:28.940Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/online-chat-e2ef5/locations/europe-west1/instances {"name":"projects/873113695162/locations/europe-west1/instances/online-chat-e2ef5-default-rtdb","project":"projects/873113695162","databaseUrl":"https://online-chat-e2ef5-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-04-01T11:14:34.040Z] >>> [apiv2][query] GET https://online-chat-e2ef5-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2023-04-01T11:14:35.331Z] <<< [apiv2][status] GET https://online-chat-e2ef5-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2023-04-01T11:14:35.331Z] <<< [apiv2][body] GET https://online-chat-e2ef5-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for online-chat-e2ef5-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-04-01T11:14:35.336Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firestore.googleapis.com [none]
+[debug] [2023-04-01T11:14:35.336Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firestore.googleapis.com x-goog-quota-user=projects/online-chat-e2ef5
+[debug] [2023-04-01T11:14:36.448Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firestore.googleapis.com 200
+[debug] [2023-04-01T11:14:36.449Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/firestore.googleapis.com [omitted]
+[debug] [2023-04-01T11:14:36.449Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/online-chat-e2ef5/databases/(default) [none]
+[debug] [2023-04-01T11:14:36.876Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/online-chat-e2ef5/databases/(default) 200
+[debug] [2023-04-01T11:14:36.877Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/online-chat-e2ef5/databases/(default) {"name":"projects/online-chat-e2ef5/databases/(default)","uid":"fb3d8a27-b03b-4a92-a524-ad66311a49c2","createTime":"2023-04-01T10:01:18.775338Z","updateTime":"2023-04-01T10:01:18.775338Z","locationId":"europe-central2","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","appEngineIntegrationMode":"ENABLED","keyPrefix":"zlm","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IIm4jO/GiP4CMKztodC4iP4C"}
+[debug] [2023-04-01T11:14:36.877Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-04-01T11:14:36.877Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-01T11:14:36.878Z] > authorizing via signed-in user (maximslansky@gmail.com)
+[debug] [2023-04-01T11:14:36.878Z] [iam] checking project online-chat-e2ef5 for permissions ["firebase.projects.get"]
+[debug] [2023-04-01T11:14:36.879Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-chat-e2ef5:testIamPermissions [none]
+[debug] [2023-04-01T11:14:36.879Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-chat-e2ef5:testIamPermissions x-goog-quota-user=projects/online-chat-e2ef5
+[debug] [2023-04-01T11:14:36.879Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-chat-e2ef5:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-01T11:14:37.821Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-chat-e2ef5:testIamPermissions 200
+[debug] [2023-04-01T11:14:37.822Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-chat-e2ef5:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-04-01T11:14:40.443Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/online-chat-e2ef5/releases pageSize=10&pageToken=
+[debug] [2023-04-01T11:14:41.439Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/online-chat-e2ef5/releases 200
+[debug] [2023-04-01T11:14:41.439Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/online-chat-e2ef5/releases {"releases":[{"name":"projects/online-chat-e2ef5/releases/cloud.firestore","rulesetName":"projects/online-chat-e2ef5/rulesets/82a1b6c9-004b-4e8d-b696-6010530f60ea","createTime":"2023-04-01T10:11:46.592132Z","updateTime":"2023-04-01T10:13:27.170770Z"},{"name":"projects/online-chat-e2ef5/releases/firebase.storage/online-chat-e2ef5.appspot.com","rulesetName":"projects/online-chat-e2ef5/rulesets/60abf1f0-e538-4cc6-b2d2-a37ff07d0732","createTime":"2023-04-01T10:01:41.933834Z","updateTime":"2023-04-01T10:01:41.933834Z"}]}
+[debug] [2023-04-01T11:14:41.439Z] Found ruleset: projects/online-chat-e2ef5/rulesets/82a1b6c9-004b-4e8d-b696-6010530f60ea
+[debug] [2023-04-01T11:14:41.440Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/online-chat-e2ef5/rulesets/82a1b6c9-004b-4e8d-b696-6010530f60ea [none]
+[debug] [2023-04-01T11:14:42.374Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/online-chat-e2ef5/rulesets/82a1b6c9-004b-4e8d-b696-6010530f60ea 200
+[debug] [2023-04-01T11:14:42.374Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/online-chat-e2ef5/rulesets/82a1b6c9-004b-4e8d-b696-6010530f60ea [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-04-01T11:14:47.504Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/online-chat-e2ef5/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-04-01T11:14:47.507Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/online-chat-e2ef5/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-04-01T11:14:47.891Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/online-chat-e2ef5/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-04-01T11:14:47.892Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/online-chat-e2ef5/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-04-01T11:14:47.893Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/online-chat-e2ef5/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-04-01T11:14:47.893Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/online-chat-e2ef5/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/online-chat-e2ef5/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-04-01T11:14:47.895Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-01T11:14:47.896Z] > authorizing via signed-in user (maximslansky@gmail.com)
+[debug] [2023-04-01T11:14:47.896Z] [iam] checking project online-chat-e2ef5 for permissions ["firebase.projects.get"]
+[debug] [2023-04-01T11:14:47.896Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-chat-e2ef5:testIamPermissions [none]
+[debug] [2023-04-01T11:14:47.896Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-chat-e2ef5:testIamPermissions x-goog-quota-user=projects/online-chat-e2ef5
+[debug] [2023-04-01T11:14:47.896Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-chat-e2ef5:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-01T11:14:48.812Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-chat-e2ef5:testIamPermissions 200
+[debug] [2023-04-01T11:14:48.812Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-chat-e2ef5:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-01T11:14:48.813Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-04-01T11:14:48.813Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/online-chat-e2ef5
+[debug] [2023-04-01T11:14:48.815Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-04-01T11:14:48.815Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/online-chat-e2ef5
+[debug] [2023-04-01T11:14:49.892Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/cloudfunctions.googleapis.com 200
+[debug] [2023-04-01T11:14:49.892Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-04-01T11:14:49.892Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-04-01T11:14:49.892Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/online-chat-e2ef5
+[debug] [2023-04-01T11:14:49.904Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/runtimeconfig.googleapis.com 200
+[debug] [2023-04-01T11:14:49.904Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-04-01T11:14:51.594Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-04-01T11:14:51.594Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-04-01T11:15:01.598Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-04-01T11:15:01.598Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/online-chat-e2ef5
+[debug] [2023-04-01T11:15:02.705Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/cloudfunctions.googleapis.com 200
+[debug] [2023-04-01T11:15:02.705Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/online-chat-e2ef5/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
