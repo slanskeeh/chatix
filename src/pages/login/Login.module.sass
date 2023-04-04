@@ -1,0 +1,128 @@
+.login
+    &__container
+        position: relative
+        height: 100vh
+        display: flex
+
+    &__back_image
+        position: absolute
+        z-index: -10
+        height: 100%
+        width: 100%
+        overflow: hidden
+        img
+            height: 100%
+            filter: blur(6px) grayscale(100%)
+
+        div
+            position: absolute
+            content: ''
+            height: 100%
+            width: 100%
+            background-color: #000
+            opacity: 1
+
+    &__wrapper
+        width: 500px
+        height: 100%
+        background-color: white
+        display: flex
+        flex-direction: column
+        gap: 10px
+        margin-left: 200px
+
+    &__logo_wrapper
+        width: 100%
+        height: 250px
+        background-color: #555
+        display: flex
+        align-items: center
+        justify-content: center
+
+    &__logo
+        font-size: 84px
+        font-weight: bold
+        color: white
+
+    &__inner_wrapper
+        padding: 40px 30px 0px 30px
+        display: flex
+        flex-direction: column
+        gap: 20px
+
+    &__redirect
+        font-size: 14px
+
+    &__invalid
+        border: 1px solid red
+
+    &__error
+        font-size: 14px
+        color: red
+
+    &__form
+        display: flex
+        flex-direction: column
+        gap: 20px
+
+        &_input
+            border: 1px solid #ddd
+            border-radius: 5px
+            padding: 15px
+            font-size: 16px
+            position: relative
+
+        &_button
+            border: 1px solid #ddd
+            border-radius: 5px
+            padding: 15px
+            font-size: 16px
+            cursor: pointer
+            &:disabled
+                cursor: not-allowed
+
+.login__logo_wrapper
+    background: linear-gradient(271deg, #1ba4d7, #4353ac, #1b2b87)
+    background-size: 600% 600%
+
+    -webkit-animation: logoGradient 30s ease infinite
+    -moz-animation: logoGradient 30s ease infinite
+    -o-animation: logoGradient 30s ease infinite
+    animation: logoGradient 30s ease infinite
+
+@-webkit-keyframes logoGradient
+    0% 
+    background-position: 0% 50%
+    50% 
+    background-position: 100% 50%
+    100% 
+    background-position: 0% 50%
+
+@-moz-keyframes logoGradient
+    0% 
+    background-position: 0% 50%
+    50% 
+    background-position: 100% 50%
+    100% 
+    background-position: 0% 50%
+
+@-o-keyframes logoGradient
+    0% 
+    background-position: 0% 50%
+    50% 
+    background-position: 100% 50%
+    100% 
+    background-position: 0% 50%
+
+@keyframes logoGradient
+    0%
+        background-position: 0% 50%
+    50%
+        background-position: 100% 50%
+    100%
+        background-position: 0% 50%
+
+.login__title
+    font-size: 36px
+    font-weight: bold
+    color: #0E0F19
