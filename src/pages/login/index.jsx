@@ -20,10 +20,16 @@ const Login = () => {
   const handleChange = (e) => {
     const target = e.target;
     validation(target);
-    if (target.name === "email") {
-      setEmail(target.value);
-    } else if (target.name === "password") {
-      setPassword(target.value);
+
+    switch (target.name) {
+      case "email":
+        setEmail(target.value);
+        break;
+      case "password":
+        setPassword(target.value);
+        break;
+      default:
+        break;
     }
   };
 
