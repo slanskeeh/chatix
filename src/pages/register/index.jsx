@@ -237,7 +237,7 @@ const Register = () => {
             )}
           </form>
           <p className={styles.register__redirect}>
-            Есть аккаунт? <Link to="/register">Войти</Link>
+            Есть аккаунт? <Link to="/login">Войти</Link>
           </p>
         </div>
       </div>
