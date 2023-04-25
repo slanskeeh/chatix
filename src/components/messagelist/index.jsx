@@ -23,7 +23,7 @@ const Messages = () => {
   console.log(messages);
 
   return (
-    <div className="messages">
+    <div className={styles.messages}>
       {messages.map((m) => (
         <Message message={m} key={m.id} />
       ))}

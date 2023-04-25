@@ -9,8 +9,8 @@ const Chat = () => {
   const { data } = useContext(ChatContext);
 
   return (
-    <div className="chat">
-      <div className="chatInfo">
+    <div className={styles.chat}>
+      <div className={styles.chat__info}>
         <span>{data.user?.displayName}</span>
       </div>
       <Messages />

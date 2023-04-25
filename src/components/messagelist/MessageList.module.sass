@@ -1,0 +1,18 @@
+@mixin mobile
+    @media screen and (max-width: 480px)
+        @content
+
+@mixin tablet
+    @media screen and (max-width: 768px)
+        @content
+
+@mixin laptop
+    @media screen and (max-width: 1200px)
+        @content
+
+.messages
+    background-color: white
+    padding: 10px
+    max-height: calc(100vh - 120px - 16px)
+    overflow: scroll
+    overflow-x: hidden

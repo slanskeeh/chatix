@@ -75,25 +75,26 @@ const Input = () => {
     setImg(null);
   };
   return (
-    <div className="input">
+    <div className={styles.input}>
       <input
+        type="file"
+        style={{ display: "none" }}
+        id="file"
+        onChange={(e) => setImg(e.target.files[0])}
+      />
+      <label htmlFor="file">
+        <img className={styles.input__img} src={Img} alt="" />
+      </label>
+      <input
+        className={styles.input__field}
         type="text"
         placeholder="Введите что-нибудь..."
         onChange={(e) => setText(e.target.value)}
         value={text}
       />
-      <div className="send">
-        <input
-          type="file"
-          style={{ display: "none" }}
-          id="file"
-          onChange={(e) => setImg(e.target.files[0])}
-        />
-        <label htmlFor="file">
-          <img src={Img} alt="" />
-        </label>
-        <button onClick={handleSend}>Отправить</button>
-      </div>
+      <button className={styles.input__button} onClick={handleSend}>
+        Отправить
+      </button>
     </div>
   );
 };

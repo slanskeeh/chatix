@@ -21,10 +21,13 @@ const Message = ({ message }) => {
   return (
     <div
       ref={ref}
-      className={`message ${message.senderId === currentUser.uid && "owner"}`}
+      className={`${styles.message} ${
+        message.senderId === currentUser.uid && `${styles.owner}`
+      }`}
     >
-      <div className="messageInfo">
+      <div className={styles.message__info}>
         <img
+          className={styles.message__info_img}
           src={
             message.senderId === currentUser.uid
               ? currentUser.photoURL
@@ -32,12 +35,18 @@ const Message = ({ message }) => {
           }
           alt=""
         />
-        <span>{date}</span>
+        <div className={styles.message__content}>
+          <p className={styles.message__content_text}>{message.text}</p>
+          {message.img && (
+            <img
+              className={styles.message__content_img}
+              src={message.img}
+              alt=""
+            />
+          )}
+        </div>
       </div>
-      <div className="messageContent">
-        <p>{message.text}</p>
-        {message.img && <img src={message.img} alt="" />}
-      </div>
+      <span className={styles.message__date}>{date}</span>
     </div>
   );
 };

@@ -1,13 +1,25 @@
+$bgcolor: #424C55
+
 .chats
+    background-color: #fff
+    height: 1fr
     &__userchat
         padding: 10px
         display: flex
         align-items: center
         gap: 10px
-        color: white
+        color: black
         cursor: pointer
+        transition: .1s
         &:hover
-            background-color: #2f2d52
+            background-color: $bgcolor
+            color: white
+
+            .chats__userchat_text
+                color: #eee
+
+            .chats__userchat_img
+                border: 2px solid white
 
         &_img
             width: 50px
@@ -20,4 +32,4 @@
             font-weight: 500
         &_text
             font-size: 14px
-            color: lightgray
+            color: gray

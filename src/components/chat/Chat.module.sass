@@ -1,0 +1,23 @@
+$bgcolor: #424C55
+
+.chat
+    max-height: 100%
+    display: grid
+    grid-template-rows: 60px 1fr 60px
+    flex-direction: column
+    gap: 4px
+    &__info
+        box-sizing: border-box
+        height: 60px
+        background-color: $bgcolor
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 10px
+        color: lightgray
+    &__icons
+        display: flex
+        gap: 10px
+        &_img
+            height: 24px
+            cursor: pointer

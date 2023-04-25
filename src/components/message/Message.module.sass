@@ -1,0 +1,62 @@
+$bgcolor: #424C55
+$bgcolor-light: #6d7e8d
+
+.message
+    display: flex
+    flex-direction: column
+    gap: 5px
+    margin-bottom: 20px
+
+    &__date
+        display: flex
+        font-size: 12px
+
+    &__info
+        display: flex
+        align-items: center
+        color: gray
+        gap: 15px
+        font-weight: 300
+
+        &_img
+            aspect-ratio: 1/1
+            width: 50px
+            border-radius: 50%
+            object-fit: cover
+
+    &__content
+        max-width: 80%
+        display: flex
+        flex-direction: column
+        gap: 10px
+
+        &_text
+            background-color: $bgcolor-light
+            color: white
+            padding: 10px 20px
+            border-radius: 0px 10px 10px 10px
+            max-width: max-content
+
+        &_img
+            width: 50%
+
+.owner
+    justify-content: end
+
+    .message
+        &__info
+            flex-direction: row-reverse
+            justify-content: end
+
+        &__content
+            &_text
+                border-radius: 10px 0px 10px 10px
+        &__date
+            flex-direction: row-reverse
+    // .message__content
+    //     align-items: flex-end
+
+    //     &_text
+    //         background-color: $bgcolor
+    //         color: white
+    //         border-radius: 10px 0px 10px 10px
